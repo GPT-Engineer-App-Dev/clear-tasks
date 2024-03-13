@@ -41,7 +41,7 @@ const Index = () => {
         </HStack>
         <HStack as="form" onSubmit={(e) => e.preventDefault()} width="100%">
           <Input placeholder="Add a new task" value={inputValue} onChange={handleInputChange} variant="filled" bgColor={bgColor} color={color} />
-          <IconButton icon={<FaPlus />} onClick={handleAddTodo} variant="outline" aria-label="Add todo" />
+          <IconButton icon={<FaPlus />} onClick={handleAddTodo} variant="outline" colorScheme="green" aria-label="Add todo" />
         </HStack>
         <Box width="100%" bgColor={bgColor} p={4} borderRadius="md">
           <UnorderedList styleType="none" m={0}>
